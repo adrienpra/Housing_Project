@@ -19,3 +19,4 @@ class CombinedAttributesAdder(BaseEstimator, TransformerMixin):
             return np.c_[X, rooms_per_households, population_per_households, bedrooms_per_room] #Translates slice objects to concatenation along the second axis.
         else:
             return np.c_[X, rooms_per_households, population_per_households]
+            
